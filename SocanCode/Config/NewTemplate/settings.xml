@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <setting name="Test1" description="测试1">
+    <option name="true" description="是" />
+    <option name="false" description="否" selected="true" />
+  </setting>
+  <setting name="Test2" description="测试2" value="" />
+</settings>

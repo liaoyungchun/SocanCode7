@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <setting name="FilterDefaultableField" description="是否过滤带默认值的字段">
+    <option name="true" description="是" />
+    <option name="false" description="否" selected="true" />
+  </setting>
+</settings>

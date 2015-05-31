@@ -1,0 +1,46 @@
+﻿/*----------------------------------------------------------
+全局化设置
+----------------------------------------------------------*/
+body
+{
+	background-color: #5c87b2;
+	font-size: .75em;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	color: #696969;
+}
+
+a:link
+{
+	color: #034af3;
+	text-decoration: underline;
+}
+a:visited
+{
+	color: #505abc;
+}
+a:hover
+{
+	color: #1d60ff;
+	text-decoration: none;
+}
+a:active
+{
+	color: #12eb87;
+}
+
+/*----------------------------------------------------------
+数据表格样式
+----------------------------------------------------------*/
+table.data tr
+{
+	text-align: left;
+	overflow: hidden;
+	word-break: break-all;
+}
+
+table.data tr.title
+{
+	height: 20px;
+}

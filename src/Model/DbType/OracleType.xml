@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+DbType与自定义类型的对应关系，DbType属性请勿动，Value属性如有需要可自行修改
+-->
+<items>
+  <item DbType="Byte" Value="" />
+  <item DbType="SByte" Value="" />
+  <item DbType="Int16" Value="" />
+  <item DbType="UInt16" Value="" />
+  <item DbType="Int32" Value="" />
+  <item DbType="UInt32" Value="" />
+  <item DbType="Int64" Value="LONG" />
+  <item DbType="UInt64" Value="" />
+
+  <item DbType="Single" Value="" />
+  <item DbType="Double" Value="" />
+
+  <item DbType="Decimal" Value="NUMBER" />
+  <item DbType="VarNumeric" Value="" />
+  <item DbType="Currency" Value="" />
+
+  <item DbType="Boolean" Value="" />
+
+  <item DbType="Guid" Value="" />
+
+  <item DbType="Date" Value="" />
+  <item DbType="Time" Value="" />
+  <item DbType="DateTime" Value="DATE,TIMESTAMP(6),TIMESTAMP(6) WITH LOCAL TIME ZONE,TIMESTAMP(6) WITH TIME ZONE,TIMESTAMP" />
+
+  <item DbType="Xml" Value="" />
+  <item DbType="AnsiStringFixedLength" Value="CHAR" />
+  <item DbType="AnsiString" Value="VARCHAR2,ROWID,CLOB" />
+  <item DbType="StringFixedLength" Value="NCHAR" />
+  <item DbType="String" Value="NVARCHAR2,NCLOB,INTERVAL YEAR(2) TO MONTH,INTERVAL DAY(2) TO SECOND(6)" />
+
+  <item DbType="Binary" Value="BINARY_DOUBLE,BINARY_FLOAT,BLOB,RAW,BFILE" />
+  <item DbType="Object" Value="*" />
+</items>

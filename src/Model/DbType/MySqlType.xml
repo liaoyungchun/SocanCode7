@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+DbType与自定义类型的对应关系，DbType属性请勿动，Value属性如有需要可自行修改
+-->
+<items>
+  <item DbType="Byte" Value="tinyint" />
+  <item DbType="SByte" Value="" />
+  <item DbType="Int16" Value="smallint" />
+  <item DbType="UInt16" Value="" />
+  <item DbType="Int32" Value="mediumint,int" />
+  <item DbType="UInt32" Value="" />
+  <item DbType="Int64" Value="bigint" />
+  <item DbType="UInt64" Value="" />
+  
+  <item DbType="Single" Value="" />
+  <item DbType="Double" Value="real,double,decimal,float" />
+  
+  <item DbType="Decimal" Value="numeric" />
+  <item DbType="VarNumeric" Value="" />
+  <item DbType="Currency" Value="" />
+  
+  <item DbType="Boolean" Value="bit,bool" />
+  
+  <item DbType="Guid" Value="" />
+
+  <item DbType="Date" Value="year,date" />
+  <item DbType="Time" Value="time" />
+  <item DbType="DateTime" Value="timestamp,datetime" />
+
+  <item DbType="Xml" Value="" />
+  <item DbType="AnsiStringFixedLength" Value="" />
+  <item DbType="AnsiString" Value="" />
+  <item DbType="StringFixedLength" Value="char" />
+  <item DbType="String" Value="tinytext,mediumtext,text,varchar,longtext" />
+
+  <item DbType="Binary" Value="varbinary,binary" />
+  <item DbType="Object" Value="*" />
+</items>

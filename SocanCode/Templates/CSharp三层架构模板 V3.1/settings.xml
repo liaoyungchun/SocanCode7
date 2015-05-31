@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <setting name="VSVersion" description="VisualStudio版本">
+    <option name="2005" description="VS2005" />
+    <option name="2008" description="VS2008" />
+    <option name="2010" description="VS2010" selected="true" />
+  </setting>
+  <setting name="NamespacePrefix" value="" description="命名空间前缀" />
+  <setting name="NamespaceSuffix" value="" description="命名空间后缀" />
+  <setting name="SlnFrame" description="三层结构样式">
+    <option name="Simple" description="简单三层结构[推荐]" selected="true" />
+    <option name="Factory" description="工厂模式三层结构" />
+  </setting>
+  <setting name="ModelStyle" description="实体层样式">
+    <option name="CS2" description="C#2.0语法" />
+    <option name="CS3" description="C#3.0语法" selected="true" />
+    <option name="MVC2" />
+  </setting>
+  <setting name="DALFrame" description="DAL项目名称">
+    <option name="DAL" description="DAL[推荐]" selected="true" />
+    <option name="AccessDAL" />
+    <option name="SqlServerDAL" />
+    <option name="MySqlDAL" />
+    <option name="OracleDAL" />
+    <option name="SQLiteDAL" />
+    <option name="AseDAL" />
+    <option name="DB2DAL" />
+    <option name="PostgreSqlDAL" />
+  </setting>
+  <setting name="DBHelperName" value="dbHelper" description="DBHelperName的名称" />
+  <setting name="FilterDefaultableField" description="是否过滤带默认值的字段">
+    <option name="true" description="是" />
+    <option name="false" description="否" selected="true" />
+  </setting>
+  <setting name="CommandType" description="读写数据库方式">
+    <option name="SQL" description="SQL语句[推荐]" />
+    <option name="SP" description="存储过程" selected="true" />
+  </setting>
+  <setting name="BLFrame" description="业务层样式">
+    <option name="BLL" description="类库[推荐]" selected="true" />
+    <option name="BLS" description="Web服务" />
+  </setting>
+  <setting name="CacheFrame" description="缓存结构">
+    <option name="None" description="不使用缓存" />
+    <option name="ObjectCache" description="缓存Model[推荐]" selected="true" />
+    <option name="ListCache" description="缓存List[需要.NET3.5以上]" />
+  </setting>
+</settings>
