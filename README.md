@@ -1,6 +1,6 @@
 ********************************************************************************************
 
-1、请双击“SocanCode-Green”目录下的“SocanCode.exe”运行程序。本软件需要Microsoft .NET Framework 2.0的支持，如果未安装，请先安装再运行本软件。
+1、请双击“SocanCode”目录下的“SocanCode.exe”运行程序。本软件需要Microsoft .NET Framework 2.0的支持，如果未安装，请先安装再运行本软件。
 
 下载地址：http://www.microsoft.com/downloads/details.aspx?familyid=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=zh-cn
 
