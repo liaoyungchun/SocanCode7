@@ -207,10 +207,6 @@
     <Compile Include="UserControls\SettingUserControl.Designer.cs">
       <DependentUpon>SettingUserControl.cs</DependentUpon>
     </Compile>
-    <Content Include="Config\History.xml">
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\template.png" />
     <None Include="Resources\js.png" />
     <None Include="Resources\xml.png" />
@@ -289,9 +285,6 @@
     <Compile Include="UserControls\SelectTableUserControl.Designer.cs">
       <DependentUpon>SelectTableUserControl.cs</DependentUpon>
     </Compile>
-    <Content Include="Config\Language.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConvertCSharp2VB\ConvertCSharp2VB.csproj">
