@@ -16,8 +16,7 @@ namespace SocanCode
     public partial class MainForm : Form
     {
         private const string HOME_URL = "http://www.Socansoft.com";
-        private const string GUESTBOOK_URL = "http://www.socansoft.com/Guestbook/List";
-        private const string HELP_URL = "http://www.socansoft.com/News/List";
+        private const string XML_URL = "http://www.socansoft.com/downloads/socancode/SocanCode.xml";
         private const string DOWNLOAD_URL = "http://www.socansoft.com/downloads/SocanCode/SocanCode.rar";
 
         public static WeifenLuo.WinFormsUI.Docking.DockPanel dockPanel;
@@ -54,6 +53,8 @@ namespace SocanCode
             bw.DoWork += new DoWorkEventHandler(bw_DoWork);
             bw.RunWorkerCompleted += new RunWorkerCompletedEventHandler(bw_RunWorkerCompleted);
             bw.RunWorkerAsync();
+
+            OpenUrl("http://www.Socansoft.com");
         }
 
         void frmTemplate_TemplateChanged()
@@ -84,7 +85,7 @@ namespace SocanCode
                 try
                 {
                     XmlDocument xml = new XmlDocument();
-                    xml.Load("http://www.socansoft.com/downloads/socancode/SocanCode.xml");
+                    xml.Load(XML_URL);
                     e.Result = xml;
                     return;
                 }
@@ -100,7 +101,7 @@ namespace SocanCode
             if (e.Result == null)
             {
                 labNewVersion.Text = "连接服务器失败!";
-                OpenUrl("http://www.Socansoft.com");
+                labNewVersion.LinkColor = Color.Red;
                 return;
             }
 
@@ -108,19 +109,17 @@ namespace SocanCode
             XmlNode display = xml.SelectSingleNode("DOCUMENT").SelectSingleNode("item").SelectSingleNode("display");
             Version lastVersion = new Version(display.SelectSingleNode("content2").InnerText);
             Version currVersion = Assembly.GetExecutingAssembly().GetName().Version;
+            labNewVersion.Tag = display.SelectSingleNode("button").Attributes["buttonlink"].Value;
 
             if (lastVersion > currVersion)
             {
                 labNewVersion.Text = "发现新版本 V" + lastVersion + ", 请点击此处下载";
                 labNewVersion.LinkColor = Color.Red;
-                labNewVersion.Tag = display.SelectSingleNode("button").Attributes["buttonlink"].Value;
-                OpenUrl("http://www.socansoft.com/go/update");
             }
             else
             {
                 labNewVersion.Text = "当前版本已经是最新版本";
                 labNewVersion.LinkColor = Color.Green;
-                OpenUrl(display.SelectSingleNode("url").InnerText);
             }
         }
         #endregion
@@ -257,22 +256,6 @@ namespace SocanCode
         }
 
         /// <summary>
-        /// 给我留言
-        /// </summary>
-        private void menuGuestbook_Click(object sender, EventArgs e)
-        {
-            OpenUrl(GUESTBOOK_URL);
-        }
-
-        /// <summary>
-        /// 帮助主题
-        /// </summary>
-        private void menuHelpTopic_Click(object sender, EventArgs e)
-        {
-            OpenUrl(HELP_URL);
-        }
-
-        /// <summary>
         /// 关于
         /// </summary>
         private void menuAbout_Click(object sender, EventArgs e)
@@ -337,6 +320,6 @@ namespace SocanCode
 #endif
         }
 
-       
+
     }
 }

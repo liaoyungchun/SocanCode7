@@ -56,10 +56,9 @@
             this.menuTools = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCodeToTemplateForm = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCodeClear = new System.Windows.Forms.ToolStripMenuItem();
+            this.cSharp转换VBNETToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuHelpTopic = new System.Windows.Forms.ToolStripMenuItem();
             this.menuWebsite = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuGuestbook = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.labNewVersion = new System.Windows.Forms.ToolStripStatusLabel();
@@ -68,7 +67,6 @@
             this.mnuClose = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCloseOther = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCloseAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.cSharp转换VBNETToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.cmsDockPanel.SuspendLayout();
@@ -83,7 +81,7 @@
             this.menuHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(672, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(672, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -93,20 +91,20 @@
             this.menuCreateCode,
             this.menuOutputCode});
             this.menuCode.Name = "menuCode";
-            this.menuCode.Size = new System.Drawing.Size(41, 20);
+            this.menuCode.Size = new System.Drawing.Size(44, 21);
             this.menuCode.Text = "代码";
             // 
             // menuCreateCode
             // 
             this.menuCreateCode.Name = "menuCreateCode";
-            this.menuCreateCode.Size = new System.Drawing.Size(118, 22);
+            this.menuCreateCode.Size = new System.Drawing.Size(124, 22);
             this.menuCreateCode.Text = "生成代码";
             this.menuCreateCode.Click += new System.EventHandler(this.menuCreateCode_Click);
             // 
             // menuOutputCode
             // 
             this.menuOutputCode.Name = "menuOutputCode";
-            this.menuOutputCode.Size = new System.Drawing.Size(118, 22);
+            this.menuOutputCode.Size = new System.Drawing.Size(124, 22);
             this.menuOutputCode.Text = "输出代码";
             this.menuOutputCode.Click += new System.EventHandler(this.menuOutputCode_Click);
             // 
@@ -117,27 +115,27 @@
             this.menuTemplate,
             this.menuShowDebug});
             this.menuView.Name = "menuView";
-            this.menuView.Size = new System.Drawing.Size(41, 20);
+            this.menuView.Size = new System.Drawing.Size(44, 21);
             this.menuView.Text = "视图";
             // 
             // menufrmDatabase
             // 
             this.menufrmDatabase.Name = "menufrmDatabase";
-            this.menufrmDatabase.Size = new System.Drawing.Size(106, 22);
+            this.menufrmDatabase.Size = new System.Drawing.Size(112, 22);
             this.menufrmDatabase.Text = "数据库";
             this.menufrmDatabase.Click += new System.EventHandler(this.menufrmDatabase_Click);
             // 
             // menuTemplate
             // 
             this.menuTemplate.Name = "menuTemplate";
-            this.menuTemplate.Size = new System.Drawing.Size(106, 22);
+            this.menuTemplate.Size = new System.Drawing.Size(112, 22);
             this.menuTemplate.Text = "模板";
             this.menuTemplate.Click += new System.EventHandler(this.menuTemplate_Click);
             // 
             // menuShowDebug
             // 
             this.menuShowDebug.Name = "menuShowDebug";
-            this.menuShowDebug.Size = new System.Drawing.Size(106, 22);
+            this.menuShowDebug.Size = new System.Drawing.Size(112, 22);
             this.menuShowDebug.Text = "调拭";
             this.menuShowDebug.Click += new System.EventHandler(this.menuShowDebug_Click);
             // 
@@ -148,59 +146,50 @@
             this.menuCodeClear,
             this.cSharp转换VBNETToolStripMenuItem});
             this.menuTools.Name = "menuTools";
-            this.menuTools.Size = new System.Drawing.Size(41, 20);
+            this.menuTools.Size = new System.Drawing.Size(44, 21);
             this.menuTools.Text = "工具";
             // 
             // menuCodeToTemplateForm
             // 
             this.menuCodeToTemplateForm.Name = "menuCodeToTemplateForm";
-            this.menuCodeToTemplateForm.Size = new System.Drawing.Size(166, 22);
+            this.menuCodeToTemplateForm.Size = new System.Drawing.Size(185, 22);
             this.menuCodeToTemplateForm.Text = "代码转模板";
             this.menuCodeToTemplateForm.Click += new System.EventHandler(this.menuCodeToTemplateForm_Click);
             // 
             // menuCodeClear
             // 
             this.menuCodeClear.Name = "menuCodeClear";
-            this.menuCodeClear.Size = new System.Drawing.Size(166, 22);
+            this.menuCodeClear.Size = new System.Drawing.Size(185, 22);
             this.menuCodeClear.Text = "代码去行号空行";
             this.menuCodeClear.Click += new System.EventHandler(this.menuCodeClear_Click);
+            // 
+            // cSharp转换VBNETToolStripMenuItem
+            // 
+            this.cSharp转换VBNETToolStripMenuItem.Name = "cSharp转换VBNETToolStripMenuItem";
+            this.cSharp转换VBNETToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.cSharp转换VBNETToolStripMenuItem.Text = "CSharp转换VB.NET";
+            this.cSharp转换VBNETToolStripMenuItem.Click += new System.EventHandler(this.cSharp转换VBNETToolStripMenuItem_Click);
             // 
             // menuHelp
             // 
             this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuHelpTopic,
             this.menuWebsite,
-            this.menuGuestbook,
             this.menuAbout});
             this.menuHelp.Name = "menuHelp";
-            this.menuHelp.Size = new System.Drawing.Size(41, 20);
+            this.menuHelp.Size = new System.Drawing.Size(44, 21);
             this.menuHelp.Text = "帮助";
-            // 
-            // menuHelpTopic
-            // 
-            this.menuHelpTopic.Name = "menuHelpTopic";
-            this.menuHelpTopic.Size = new System.Drawing.Size(118, 22);
-            this.menuHelpTopic.Text = "帮助主题";
-            this.menuHelpTopic.Click += new System.EventHandler(this.menuHelpTopic_Click);
             // 
             // menuWebsite
             // 
             this.menuWebsite.Name = "menuWebsite";
-            this.menuWebsite.Size = new System.Drawing.Size(118, 22);
+            this.menuWebsite.Size = new System.Drawing.Size(152, 22);
             this.menuWebsite.Text = "官方网站";
             this.menuWebsite.Click += new System.EventHandler(this.menuWebsite_Click);
-            // 
-            // menuGuestbook
-            // 
-            this.menuGuestbook.Name = "menuGuestbook";
-            this.menuGuestbook.Size = new System.Drawing.Size(118, 22);
-            this.menuGuestbook.Text = "给我留言";
-            this.menuGuestbook.Click += new System.EventHandler(this.menuGuestbook_Click);
             // 
             // menuAbout
             // 
             this.menuAbout.Name = "menuAbout";
-            this.menuAbout.Size = new System.Drawing.Size(118, 22);
+            this.menuAbout.Size = new System.Drawing.Size(152, 22);
             this.menuAbout.Text = "关于";
             this.menuAbout.Click += new System.EventHandler(this.menuAbout_Click);
             // 
@@ -219,7 +208,7 @@
             this.labNewVersion.IsLink = true;
             this.labNewVersion.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.labNewVersion.Name = "labNewVersion";
-            this.labNewVersion.Size = new System.Drawing.Size(95, 17);
+            this.labNewVersion.Size = new System.Drawing.Size(89, 17);
             this.labNewVersion.Tag = "http://www.socansoft.com/downloads/SocanCode/SocanCode.rar";
             this.labNewVersion.Text = "正在检测版本...";
             this.labNewVersion.Click += new System.EventHandler(this.labNewVersion_Click);
@@ -234,9 +223,9 @@
             this.dockPanel1.DockRightPortion = 0.2D;
             this.dockPanel1.DockTopPortion = 0.2D;
             this.dockPanel1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
-            this.dockPanel1.Location = new System.Drawing.Point(0, 24);
+            this.dockPanel1.Location = new System.Drawing.Point(0, 25);
             this.dockPanel1.Name = "dockPanel1";
-            this.dockPanel1.Size = new System.Drawing.Size(672, 324);
+            this.dockPanel1.Size = new System.Drawing.Size(672, 323);
             dockPanelGradient1.EndColor = System.Drawing.SystemColors.ControlLight;
             dockPanelGradient1.StartColor = System.Drawing.SystemColors.ControlLight;
             autoHideStripSkin1.DockStripGradient = dockPanelGradient1;
@@ -314,13 +303,6 @@
             this.mnuCloseAll.Text = "关闭全部标签";
             this.mnuCloseAll.Click += new System.EventHandler(this.mnuCloseAll_Click);
             // 
-            // cSharp转换VBNETToolStripMenuItem
-            // 
-            this.cSharp转换VBNETToolStripMenuItem.Name = "cSharp转换VBNETToolStripMenuItem";
-            this.cSharp转换VBNETToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.cSharp转换VBNETToolStripMenuItem.Text = "CSharp转换VB.NET";
-            this.cSharp转换VBNETToolStripMenuItem.Click += new System.EventHandler(this.cSharp转换VBNETToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -360,13 +342,11 @@
         private System.Windows.Forms.ToolStripMenuItem menuView;
         private System.Windows.Forms.ToolStripMenuItem menufrmDatabase;
         private System.Windows.Forms.ToolStripMenuItem menuCodeToTemplateForm;
-        private System.Windows.Forms.ToolStripMenuItem menuGuestbook;
         private System.Windows.Forms.ToolStripMenuItem menuCode;
         private System.Windows.Forms.ContextMenuStrip cmsDockPanel;
         private System.Windows.Forms.ToolStripMenuItem mnuClose;
         private System.Windows.Forms.ToolStripMenuItem mnuCloseOther;
         private System.Windows.Forms.ToolStripMenuItem mnuCloseAll;
-        private System.Windows.Forms.ToolStripMenuItem menuHelpTopic;
         private System.Windows.Forms.ToolStripMenuItem menuCreateCode;
         private System.Windows.Forms.ToolStripMenuItem menuOutputCode;
         private System.Windows.Forms.ToolStripMenuItem menuTemplate;
